@@ -699,8 +699,10 @@ int activate_adventurer(struct gameState *state, int current_player)
         temp_hand[temp_hand_counter] = card_drawn;
         state->handCount[current_player]--; //this should just remove the top card (the most recently drawn one).
         temp_hand_counter++;
+        // This does not remove the card from the cards array, only decrements the hand count
     }
   }
+  // Places all cards in temporary hand into discard pile
   while(temp_hand_counter - 1>=0)
   {
       state->discard[current_player][state->discardCount[current_player]++] = temp_hand[temp_hand_counter - 1]; // discard all cards in play that have been drawn

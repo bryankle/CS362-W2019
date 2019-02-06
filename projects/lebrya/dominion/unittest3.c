@@ -6,6 +6,7 @@
 #include "rngs.h"
 #include <stdlib.h>
 #include <time.h>
+#include  "test.h"
 
 void assign_state_whoseTurn(struct gameState *G, int player)
 {
@@ -18,11 +19,12 @@ int main()
     struct gameState G;
     int i;
 
+    printf("Unit test 3: whoseTurn");
     for (i = 0; i < 50; i++)
     {
         assign_state_whoseTurn(&G, i);
         int player = whoseTurn(&G);
-        assert(player == i);
+        assert_true(player == i, "Correct player");
     }
 
     printf("Unit test 3: All tests passing\n");

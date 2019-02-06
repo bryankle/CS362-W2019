@@ -6,6 +6,7 @@
 #include "rngs.h"
 #include <stdlib.h>
 #include <time.h>
+#include "test.h"
 
 void assign_state_handCount(struct gameState *state, int player, int card_count)
 {
@@ -21,14 +22,14 @@ int main()
     int current_player = 0;
     int rand_int;
     int i = 0;
+    printf("Unit test 2: numHandCards");
     for (i = 0; i < 20; i++) {
         rand_int = rand() % 100;
         assign_state_handCount(&G, current_player, rand_int);
         int player_handcount = numHandCards(&G);
-        assert(player_handcount == rand_int);
+        assert_true(player_handcount == rand_int, "Handcount matches randomly assigned integer");
     }
-    // assign_state_handCount(&G,current_player, -1);
-    // Test for negative values?
+
     printf("Unit test 2: All tests passing\n");
     return 0;
 }

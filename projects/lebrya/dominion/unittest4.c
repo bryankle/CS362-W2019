@@ -5,6 +5,7 @@
 #include <assert.h>
 #include "rngs.h"
 #include <stdlib.h>
+#include "test.h"
 
 #define CARD_SIZE 27
 
@@ -43,10 +44,11 @@ int main()
     ambassador, cutpurse, embargo, outpost, salvager, sea_hag, treasure_map};
 
     int i;
+    printf("Unit test 4: getCost");
     for (i = 0; i < CARD_SIZE; i++)
     {
         int cost = getCost(i);
-        assert(cost == cards[i]);
+        assert_true(cost == cards[i], "Card cost correctly assigned");
     }
 
     printf("Unit test 4: All tests passing\n");

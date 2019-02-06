@@ -54,6 +54,24 @@ cardtest3: cardtest3.c dominion.o rngs.o
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
 	
+unittestresults: 
+	make unittest1
+	make unittest2
+	make unittest3
+	make unittest4
+	make cardtest1
+	make cardtest2
+	make cardtest3
+	make cardtest4
+	./unittest1 &> unittestresults.out
+	./unittest2 >> unittestresults.out
+	./unittest3 >> unittestresults.out
+	./unittest4 >> unittestresults.out
+	./cardtest1 >> unittestresults.out
+	./cardtest2 >> unittestresults.out
+	./cardtest3 >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	gcov dominion.c -f >> unittestresults.out
 
 
 player: player.c interface.o

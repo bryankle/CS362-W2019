@@ -20,7 +20,7 @@ int main()
 
     // Generate number of random players (1 - 4)
     srand(time(NULL));
-    number_of_players = (rand() % MAX_PLAYERS) + 1;
+    number_of_players = (rand() % (MAX_PLAYERS - 1)) + 2;
 
     printf("Testing with %d players.\n", number_of_players);
     initializeGame(number_of_players, kingdom_cards, seed, &game_state);
@@ -42,7 +42,6 @@ int main()
         // printf("Player %d hand count: %d\n", i + 1, game_state.handCount[i]);
         // printf("Player %d deck count: %d\n", i + 1, game_state.deckCount[i]);
     }
-
     int j;
     int test_result;
     for (j = 0; j < number_of_players; j++)
@@ -50,8 +49,14 @@ int main()
         memset(buffer, 0, 100 * sizeof(buffer[0]));
         int test_number = j + 1;
         int player_number = j + 1;
+        // printf("Before: %d\nAfter: %d\n", handcount_0[j], handcount_1[j]);
+        // int handcount_initial = handcount_0[j];
+        // int handcount_final = handcount_1[j];
+        // printf("%d should be 2 less than %d\n", handcount_0[j], handcount_1[j]);
         sprintf(buffer, "Test %d: Player %d original hand count should contain two less cards than updated hand count %d + 2 == %d", j + 1, j + 1, handcount_0[j], handcount_1[j]);
         printf("%s\n", buffer);
+        // test_result = assert_true(handcount_0[j] + 2 == handcount_1[j]);
+        // test_result = assert_true(handcount_0)
     }
 
 

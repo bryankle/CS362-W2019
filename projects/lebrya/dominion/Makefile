@@ -53,7 +53,25 @@ cardtest3: cardtest3.c dominion.o rngs.o
 	
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o	
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard1: randomtestcard1.c dominion.o rngs.o	
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard2: randomtestcard2.c dominion.o rngs.o	
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS)
+
+randomtestresults:
+	make randomtestadventurer
+	make randomtestcard1
+	make randomtestcard2
+	./randomtestadventurer &> randomtestresults.out
+	gcov dominion.c -f >> randomtest.out
+ 
 	
+
 unittestresults: 
 	make unittest1
 	make unittest2

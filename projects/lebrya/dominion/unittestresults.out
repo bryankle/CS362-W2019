@@ -1,0 +1,220 @@
+Unit test 1: kingdomCardsKingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Kingdom card is correct
+Unit test 1: All tests passing
+Unit test 2: numHandCardsHandcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Handcount matches randomly assigned integer
+Unit test 2: All tests passing
+Unit test 3: whoseTurnCorrect player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Correct player
+Unit test 3: All tests passing
+Unit test 4: getCostCard cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Card cost correctly assigned
+Unit test 4: All tests passing
+Player 1 hand: 7
+Player 2 hand: 0
+Card Test 1: Adventurer
+Test 1: Original hand count containsn two less cards than updated hand count.
+Test 2: Player 2 hand count should remain unchanged.
+Test 3: Player 1 discard count should remain unchanged.
+Test 4: Player 2 discard count should remain unchanged.
+All tests passing.
+Card Test 2: Smithy
+Test 1: Player 1 card count should increase by 3 after Smithy.
+Test 2: Player 1 deck count should contain 3 less cards.
+Test 3: Player 2 card count should be unaltered.
+Test 4: Player 2 deck count should be unaltered.
+All tests passing.
+Card Test 3: Village
+Test 1: Player 1 handcount should remain the same after drawing a card and discarding Village.
+Test 2: Number of actions should be increased by 2.
+Test 3: Player 2 handcount should be unaltered.
+All tests passing.
+Card Test 4: Great Hall
+Test 1: Player 1 hand count should remain unchanged after drawing and discarding a card.
+Test 2: Number of actions should increase by one.
+Test 3: Player 2 hand count should remain unaltered.
+All tests passing.
+Function 'compare'
+Lines executed:83.33% of 6
+
+Function 'newGame'
+Lines executed:0.00% of 2
+
+Function 'kingdomCards'
+Lines executed:100.00% of 12
+
+Function 'initializeGame'
+Lines executed:85.90% of 78
+
+Function 'shuffle'
+Lines executed:94.44% of 18
+
+Function 'playCard'
+Lines executed:0.00% of 14
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+
+Function 'numHandCards'
+Lines executed:100.00% of 1
+
+Function 'handCard'
+Lines executed:0.00% of 2
+
+Function 'supplyCount'
+Lines executed:0.00% of 1
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 11
+
+Function 'whoseTurn'
+Lines executed:100.00% of 1
+
+Function 'endTurn'
+Lines executed:0.00% of 22
+
+Function 'isGameOver'
+Lines executed:0.00% of 12
+
+Function 'scoreFor'
+Lines executed:0.00% of 62
+
+Function 'getWinners'
+Lines executed:0.00% of 33
+
+Function 'drawCard'
+Lines executed:33.33% of 24
+
+Function 'getCost'
+Lines executed:96.67% of 30
+
+Function 'activate_adventurer'
+Lines executed:58.82% of 17
+
+Function 'activate_smithy'
+Lines executed:100.00% of 5
+
+Function 'activate_great_hall'
+Lines executed:100.00% of 4
+
+Function 'activate_village'
+Lines executed:100.00% of 4
+
+Function 'activate_baron'
+Lines executed:0.00% of 36
+
+Function 'cardEffect'
+Lines executed:0.00% of 229
+
+Function 'discardCard'
+Lines executed:73.33% of 15
+
+Function 'gainCard'
+Lines executed:0.00% of 15
+
+Function 'updateCoins'
+Lines executed:71.43% of 14
+
+File 'dominion.c'
+Lines executed:27.02% of 681
+dominion.c:creating 'dominion.c.gcov'
+

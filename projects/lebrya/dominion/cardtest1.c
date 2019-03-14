@@ -23,7 +23,8 @@ int main()
     int p2_discardcount_0 = game_state.discardCount[player_2];
 
     activate_adventurer(&game_state, player_1);
-
+    printf("Player 1 hand: %d\n", game_state.handCount[player_1]);
+    printf("Player 2 hand: %d\n", game_state.handCount[1]);
     int p1_handcount_1 = game_state.handCount[player_1];
     int p2_handcount_1 = game_state.handCount[player_2];
     int p1_discardcount_1 = game_state.discardCount[player_1];
